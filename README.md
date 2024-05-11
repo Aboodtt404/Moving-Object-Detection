@@ -1,2 +1,23 @@
-# Moving-Object-Detection
- Python script for detecting objects in videos, suitable for traffic monitoring. It draws boxes around moving objects, from humans to cars, and saves the output
+Moving Object Detection in Videos (Traffic Monitoring)
+
+This Python script implements a real-time moving object detection system suitable for basic traffic monitoring applications. It leverages OpenCV and the Gaussian Mixture Model (GMM) for background subtraction.
+
+Features
+
+    Real-time Processing: Analyzes video frames on-the-fly for real-time object detection.
+    Background Subtraction with GMM: Adapts to gradual lighting changes and handles static objects in the scene.
+    Morphological Closing: Refines the foreground mask by removing noise and holes.
+    Learning Rate Update: Continuously updates the background model to account for slow scene changes.
+    Output: Generates a video output where only moving objects are highlighted within the original video frame (black background with detected objects shown in original colors).
+
+Applications
+
+    Basic traffic monitoring: Detecting moving vehicles in a scene.
+    People counting: Identifying and counting people entering or leaving a specific area.
+
+Limitations
+
+    This approach might not be ideal for complex scenarios with:
+        Significant background variations (e.g., flickering lights, shadows)
+        Slow-moving objects
+        Multiple object types requiring individual classification
