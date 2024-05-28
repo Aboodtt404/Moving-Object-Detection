@@ -38,10 +38,3 @@ This approach might not be ideal for complex scenarios with:
     ```
     Use code with caution.
 
-3. **Run the script:**
-    ```bash
-    python main.py path/to/your/video.mp4
-    ```
-    Replace `path/to/your/video.mp4` with the actual path to your video file.
-    Use code with caution.
-
